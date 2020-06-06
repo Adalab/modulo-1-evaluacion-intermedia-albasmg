@@ -43,8 +43,11 @@
   list-style-type: none;
 }
 
-.header-menu-items :last-child {
-  padding-left: 20px;
+.header-menu-items-links {
+  color: inherit;
+  text-decoration: inherit;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
 .header-logo {
@@ -59,13 +62,14 @@
   height: 100vh;
   background: var(--primary-color);
   color: var(--font-secondary-color);
-  font-size: 30px;
   font-weight: var(--font-bold);
   text-align: center;
 }
 
 .main-title span {
   display: block;
+  text-transform: capitalize;
+  font-size: 30px;
 }
 
 @media all and (min-width: 768px) {
@@ -78,10 +82,9 @@
 
   .header-menu {
     margin-bottom: 0;
-    font-size: 16px;
   }
 
-  .main {
+  .main-title span {
     font-size: 40px;
   }
 }
